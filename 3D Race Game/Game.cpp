@@ -42,18 +42,12 @@ void Game::build()
 		world->add( camera );
 		world->add( light );
 		GameObject * player = new GameObject("Player", glm::vec3( 0.0, -1.0, 0.0 ));
-			player->setBehaviour( new RotatingBehaviour( player ) );
+//			player->setBehaviour( new RotatingBehaviour( player ) );
 			player->setMesh( suzanna );
 			player->setColorMap( Texture::load("models/bricks.jpg") );
 			player->setCollider( new Collider( player ) );
 
 			world->add( player  );
-		GameObject * enemy = new GameObject("Enemy", glm::vec3( 2,-1,-5 ) );
-			enemy->setBehaviour( new KeysBehaviour( enemy ) );
-			enemy->setMesh( suzanna );
-			enemy->setColorMap( Texture::load("models/monkey.jpg") );
-			enemy->setCollider( new Collider( enemy ) );
-			world->add( enemy );
 }
 
 void Game::run()
