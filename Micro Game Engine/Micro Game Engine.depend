@@ -1,0 +1,840 @@
+# depslib dependency file v1.0
+1358440301 source:c:\users\jan\dropbox\saxion share\i\micro game engine\src\camera.cpp
+	<glm/glm.hpp>
+	"Camera.hpp"
+	"Renderer.hpp"
+
+1359814668 hpp"
+
+1358440848 c:\users\jan\dropbox\saxion share\i\micro game engine\include\camera.hpp
+
+1358424764 source:c:\users\jan\dropbox\saxion share\i\micro game engine\src\collider.cpp
+	"Collider.hpp"
+
+1358424763 c:\users\jan\dropbox\saxion share\i\micro game engine\include\collider.hpp
+
+1358439851 source:c:\users\jan\dropbox\saxion share\i\micro game engine\src\game.cpp
+	<cassert>
+	"Time.hpp"
+	"FPS.hpp"
+	"Renderer.hpp"
+	"Game.hpp"
+	"World.hpp"
+
+1359907694 "
+
+1358440672 c:\users\jan\dropbox\saxion share\i\micro game engine\include\game.hpp
+	<SFML/Window.hpp>
+
+1359584133 ow.hpp>
+
+1358440484 source:c:\users\jan\dropbox\saxion share\i\micro game engine\src\light.cpp
+	"Light.hpp"
+
+1358440825 c:\users\jan\dropbox\saxion share\i\micro game engine\include\light.hpp
+
+1358424155 source:c:\users\jan\dropbox\saxion share\i\micro game engine\src\mesh.cpp
+	"Mesh.hpp"
+
+1359671404 
+
+1358424154 c:\users\jan\dropbox\saxion share\i\micro game engine\include\mesh.hpp
+
+1358438369 source:c:\users\jan\dropbox\saxion share\i\micro game engine\src\object.cpp
+	<cassert>
+	<iostream>
+	"Object.hpp"
+	"Transform.hpp"
+
+1358437972 .hpp"
+
+1358436473 c:\users\jan\dropbox\saxion share\i\micro game engine\include\object.hpp
+	<vector>
+	<string>
+
+1358440234 source:c:\users\jan\dropbox\saxion share\i\micro game engine\src\renderer.cpp
+	"Renderer.hpp"
+	<GL/glew.h>
+
+1359061002 >
+
+1358428677 c:\users\jan\dropbox\saxion share\i\micro game engine\include\renderer.h
+
+1358431634 source:c:\users\jan\dropbox\saxion share\i\micro game engine\src\time.cpp
+	"Time.hpp"
+
+1358431643 c:\users\jan\dropbox\saxion share\i\micro game engine\include\time.hpp
+	<SFML/System.hpp>
+
+1358431643 em.hpp>
+
+1358437972 source:c:\users\jan\dropbox\saxion share\i\micro game engine\src\transform.cpp
+	"Transform.hpp"
+
+1358439225 c:\users\jan\dropbox\saxion share\i\micro game engine\include\transform.hpp
+	<iostream>
+	<glm/glm.hpp>
+	<glm/ext.hpp>
+
+1358439225 pp>
+
+1358440447 source:c:\users\jan\dropbox\saxion share\i\micro game engine\src\world.cpp
+	<cassert>
+	"World.hpp"
+	"Camera.hpp"
+	"Light.hpp"
+
+1358439860 c:\users\jan\dropbox\saxion share\i\micro game engine\include\world.hpp
+	"Object.hpp"
+
+1358439860 p"
+
+1358439224 source:c:\users\jan\dropbox\saxion share\i\micro game engine\src\main.cpp
+	<iostream>
+	"Game.hpp"
+	"Transform.hpp"
+
+1358430878 source:c:\users\jan\dropbox\saxion share\i\micro game engine\src\fps.cpp
+	<iostream>
+	"FPS.hpp"
+	"Time.hpp"
+
+1358430510 c:\users\jan\dropbox\saxion share\i\micro game engine\include\fps.hpp
+
+1358440343 c:\users\jan\dropbox\saxion share\i\micro game engine\include\renderer.hpp
+	<glm/glm.hpp>
+	<SFML/Window.hpp>
+
+1359576034 source:d:\dropbox\saxion share\i\micro game engine\src\collider.cpp
+	"Collider.hpp"
+
+1359576049 d:\dropbox\saxion share\i\micro game engine\include\collider.hpp
+
+1358430878 source:d:\dropbox\saxion share\i\micro game engine\src\fps.cpp
+	<iostream>
+	"FPS.hpp"
+	"Time.hpp"
+
+1358430510 d:\dropbox\saxion share\i\micro game engine\include\fps.hpp
+
+1358431643 d:\dropbox\saxion share\i\micro game engine\include\time.hpp
+	<SFML/System.hpp>
+
+1359814668 source:d:\dropbox\saxion share\i\micro game engine\src\mesh.cpp
+	"Mesh.hpp"
+	<map>
+	<cstring>
+	<fstream>
+	"Renderer.hpp"
+
+1359671404 d:\dropbox\saxion share\i\micro game engine\include\mesh.hpp
+	<vector>
+	<GL/glew.h>
+	"glm.hpp"
+
+1358438369 source:d:\dropbox\saxion share\i\micro game engine\src\object.cpp
+	<cassert>
+	<iostream>
+	"Object.hpp"
+	"Transform.hpp"
+
+1358436473 d:\dropbox\saxion share\i\micro game engine\include\object.hpp
+	<vector>
+	<string>
+
+1358439225 d:\dropbox\saxion share\i\micro game engine\include\transform.hpp
+	<iostream>
+	<glm/glm.hpp>
+	<glm/ext.hpp>
+
+1359818749 source:d:\dropbox\saxion share\i\micro game engine\src\time.cpp
+	"Time.hpp"
+	<iostream>
+
+1358437972 source:d:\dropbox\saxion share\i\micro game engine\src\transform.cpp
+	"Transform.hpp"
+
+1359822293 source:d:\dropbox\saxion share\i\micro game engine\src\world.cpp
+	<cassert>
+	"World.hpp"
+	"Camera.hpp"
+	"Light.hpp"
+
+1359822194 d:\dropbox\saxion share\i\micro game engine\include\world.hpp
+	"GameObject.hpp"
+
+1359907327 t.hpp"
+
+1359672063 d:\dropbox\saxion share\i\micro game engine\include\camera.hpp
+	<string>
+	"GameObject.hpp"
+
+1359672561 d:\dropbox\saxion share\i\micro game engine\include\light.hpp
+	<string>
+	"GameObject.hpp"
+
+1359583975 source:d:\dropbox\saxion share\i\micro game engine\src\main.cpp
+	<iostream>
+	"Game.hpp"
+	"Transform.hpp"
+
+1359584133 d:\dropbox\saxion share\i\micro game engine\include\game.hpp
+	<SFML/Window.hpp>
+
+1359820408 d:\dropbox\saxion share\i\micro game engine\include\gameobject.hpp
+	<vector>
+	<string>
+	"glm.hpp"
+
+1359822483 source:d:\dropbox\saxion share\i\micro game engine\src\camera.cpp
+	"glm.hpp"
+	"Camera.hpp"
+	"Renderer.hpp"
+
+1359815837 d:\dropbox\saxion share\i\micro game engine\include\renderer.hpp
+	<GL/glew.h>
+	<SFML/Window.hpp>
+	"glm.hpp"
+
+1359822065 source:d:\dropbox\saxion share\i\micro game engine\src\game.cpp
+	<cassert>
+	"Time.hpp"
+	"FPS.hpp"
+	"Renderer.hpp"
+	"ShaderProgram.hpp"
+	"Game.hpp"
+	"World.hpp"
+	"Camera.hpp"
+	"Light.hpp"
+	"Mesh.hpp"
+	"Texture.hpp"
+	"KeysBehaviour.hpp"
+	"RotatingBehaviour.hpp"
+
+1359822065 ehaviour.hpp"
+
+1359820824 source:d:\dropbox\saxion share\i\micro game engine\src\gameobject.cpp
+	<cassert>
+	<iostream>
+	"Renderer.hpp"
+	"GameObject.hpp"
+	"Transform.hpp"
+	"Collider.hpp"
+	"Behaviour.hpp"
+	"Mesh.hpp"
+	"Texture.hpp"
+
+1359892486 pp"
+
+1359672518 source:d:\dropbox\saxion share\i\micro game engine\src\light.cpp
+	"Light.hpp"
+	"Renderer.hpp"
+
+1359820738 source:d:\dropbox\saxion share\i\micro game engine\src\renderer.cpp
+	"Renderer.hpp"
+	<cassert>
+	<GL/glew.h>
+	"ShaderProgram.hpp"
+	"Texture.hpp"
+
+1359815027 d:\dropbox\saxion share\i\micro game engine\include\shaderprogram.hpp
+	<string>
+	<vector>
+	<GL/glew.h>
+	"glm.hpp"
+
+1358976549 d:\dropbox\saxion share\i\micro game engine\include\glm.hpp
+	<iostream>
+	<iomanip>
+	<glm/glm.hpp>
+	<glm/ext.hpp>
+
+1359061002 d:\dropbox\saxion share\i\micro game engine\include\texture.hpp
+	<iostream>
+	<map>
+	<GL/glew.h>
+
+1359060929 source:d:\dropbox\saxion share\i\micro game engine\src\shaderprogram.cpp
+	"ShaderProgram.hpp"
+	<iostream>
+	<fstream>
+	"Texture.hpp"
+
+1359817193 source:d:\dropbox\saxion share\i\micro game engine\src\texture.cpp
+	<SFML/Graphics.hpp>
+	"ShaderProgram.hpp"
+	"Texture.hpp"
+
+1359576354 source:d:\dropbox\saxion share\i\micro game engine\src\behavour.cpp
+	"Behavour.hpp"
+
+1359576386 d:\dropbox\saxion share\i\micro game engine\include\behavour.hpp
+
+1359820358 source:d:\dropbox\saxion share\i\micro game engine\src\behaviour.cpp
+	"Behaviour.hpp"
+	<cassert>
+
+1359820895 d:\dropbox\saxion share\i\micro game engine\include\behaviour.hpp
+
+1359821059 source:d:\dropbox\saxion share\i\micro game engine\src\rotatingbehaviour.cpp
+	"RotatingBehaviour.hpp"
+	<iostream>
+	"glm.hpp"
+	"GameObject.hpp"
+
+1359821963 d:\dropbox\saxion share\i\micro game engine\include\rotatingbehaviour.hpp
+	"Behaviour.hpp"
+
+1359822357 source:d:\dropbox\saxion share\i\micro game engine\src\keysbehaviour.cpp
+	"KeysBehaviour.hpp"
+	<sfml/window.hpp>
+	"GameObject.hpp"
+
+1359821792 d:\dropbox\saxion share\i\micro game engine\include\keysbehaviour.hpp
+	"Behaviour.hpp"
+
+1359893973 source:d:\dropbox\saxion share\i\micro game engine\behaviour.cpp
+	<cassert>
+	<iostream>
+	"Behaviour.hpp"
+
+1359820895 d:\dropbox\saxion share\i\micro game engine\behaviour.hpp
+
+1359902126 source:d:\dropbox\saxion share\i\micro game engine\behaviours\keysbehaviour.cpp
+	"KeysBehaviour.hpp"
+	<sfml/window.hpp>
+	"../GameObject.hpp"
+
+1359910287 ject.hpp"
+
+1359823466 d:\dropbox\saxion share\i\micro game engine\behaviours\keysbehaviour.hpp
+	"../Behaviour.hpp"
+
+1359908478 our.hpp"
+
+1359901763 d:\dropbox\saxion share\i\micro game engine\gameobject.hpp
+	<vector>
+	<string>
+	"glm.hpp"
+
+1359909794 d:\dropbox\saxion share\i\micro game engine\glm.hpp
+	<iostream>
+	<iomanip>
+	<glm/glm.hpp>
+	<glm/ext.hpp>
+
+1359823488 source:d:\dropbox\saxion share\i\micro game engine\behaviours\rotatingbehaviour.cpp
+	"RotatingBehaviour.hpp"
+	<iostream>
+	"../glm.hpp"
+	"../GameObject.hpp"
+
+1359823480 d:\dropbox\saxion share\i\micro game engine\behaviours\rotatingbehaviour.hpp
+	"../Behaviour.hpp"
+
+1359909952 source:d:\dropbox\saxion share\i\micro game engine\camera.cpp
+	"glm.hpp"
+	"Camera.hpp"
+	"Renderer.hpp"
+
+1359907314 d:\dropbox\saxion share\i\micro game engine\camera.hpp
+	<string>
+	"GameObject.hpp"
+
+1359895596 d:\dropbox\saxion share\i\micro game engine\renderer.hpp
+	<GL/glew.h>
+	<SFML/Window.hpp>
+	"glm.hpp"
+
+1359902009 source:d:\dropbox\saxion share\i\micro game engine\collider.cpp
+	<iostream>
+	"Collider.hpp"
+	"GameObject.hpp"
+
+1359901910 d:\dropbox\saxion share\i\micro game engine\collider.hpp
+
+1358430878 source:d:\dropbox\saxion share\i\micro game engine\fps.cpp
+	<iostream>
+	"FPS.hpp"
+	"Time.hpp"
+
+1358430510 d:\dropbox\saxion share\i\micro game engine\fps.hpp
+
+1358431643 d:\dropbox\saxion share\i\micro game engine\time.hpp
+	<SFML/System.hpp>
+
+1359909589 source:d:\dropbox\saxion share\i\micro game engine\game.cpp
+	<cassert>
+	"Time.hpp"
+	"FPS.hpp"
+	"Renderer.hpp"
+	"ShaderProgram.hpp"
+	"Game.hpp"
+	"World.hpp"
+	"Camera.hpp"
+	"Light.hpp"
+	"Mesh.hpp"
+	"Texture.hpp"
+	"Behaviours/KeysBehaviour.hpp"
+	"Behaviours/WASDBehaviour.hpp"
+	"Behaviours/RotatingBehaviour.hpp"
+	"Collider.hpp"
+
+1359815027 d:\dropbox\saxion share\i\micro game engine\shaderprogram.hpp
+	<string>
+	<vector>
+	<GL/glew.h>
+	"glm.hpp"
+
+1359584133 d:\dropbox\saxion share\i\micro game engine\game.hpp
+	<SFML/Window.hpp>
+
+1359913838 d:\dropbox\saxion share\i\micro game engine\world.hpp
+	"GameObject.hpp"
+
+1359907327 d:\dropbox\saxion share\i\micro game engine\light.hpp
+	<string>
+	"GameObject.hpp"
+
+1359671404 d:\dropbox\saxion share\i\micro game engine\mesh.hpp
+	<vector>
+	<GL/glew.h>
+	"glm.hpp"
+
+1359061002 d:\dropbox\saxion share\i\micro game engine\texture.hpp
+	<iostream>
+	<map>
+	<GL/glew.h>
+
+1359901762 source:d:\dropbox\saxion share\i\micro game engine\gameobject.cpp
+	<cassert>
+	<iostream>
+	"Renderer.hpp"
+	"GameObject.hpp"
+	"Collider.hpp"
+	"Behaviour.hpp"
+	"Mesh.hpp"
+	"Texture.hpp"
+
+1358439225 d:\dropbox\saxion share\i\micro game engine\transform.hpp
+	<iostream>
+	<glm/glm.hpp>
+	<glm/ext.hpp>
+
+1359907291 source:d:\dropbox\saxion share\i\micro game engine\light.cpp
+	"Light.hpp"
+	"Renderer.hpp"
+
+1359814668 source:d:\dropbox\saxion share\i\micro game engine\mesh.cpp
+	"Mesh.hpp"
+	<map>
+	<cstring>
+	<fstream>
+	"Renderer.hpp"
+
+1359907027 source:d:\dropbox\saxion share\i\micro game engine\renderer.cpp
+	"Renderer.hpp"
+	<cassert>
+	<GL/glew.h>
+	"ShaderProgram.hpp"
+	"Texture.hpp"
+
+1359060929 source:d:\dropbox\saxion share\i\micro game engine\shaderprogram.cpp
+	"ShaderProgram.hpp"
+	<iostream>
+	<fstream>
+	"Texture.hpp"
+
+1359892486 source:d:\dropbox\saxion share\i\micro game engine\texture.cpp
+	<SFML/Graphics.hpp>
+	"ShaderProgram.hpp"
+	"Texture.hpp"
+
+1359818749 source:d:\dropbox\saxion share\i\micro game engine\time.cpp
+	"Time.hpp"
+	<iostream>
+
+1358437972 source:d:\dropbox\saxion share\i\micro game engine\transform.cpp
+	"Transform.hpp"
+
+1359907694 source:d:\dropbox\saxion share\i\micro game engine\world.cpp
+	<cassert>
+	"World.hpp"
+	"Camera.hpp"
+	"Light.hpp"
+
+1359895363 source:d:\dropbox\saxion share\i\micro game engine\main.cpp
+	<iostream>
+	"Game.hpp"
+
+1359899447 source:d:\dropbox\saxion share\i\micro game engine\colliders\spherecollider.cpp
+	<cassert>
+	<iostream>
+	"SphereCollider.hpp"
+	"../GameObject.hpp"
+
+1359898966 d:\dropbox\saxion share\i\micro game engine\colliders\spherecollider.hpp
+	"../Collider.hpp"
+
+1359898966 er.hpp"
+
+1359910287 source:d:\dropbox\saxion share\i\micro game engine\behaviours\wasdbehaviour.cpp
+	<iostream>
+	<cmath>
+	<SFML/Window.hpp>
+	"WASDBehaviour.hpp"
+	"../glm.hpp"
+	"../GameObject.hpp"
+
+1359908478 d:\dropbox\saxion share\i\micro game engine\behaviours\wasdbehaviour.hpp
+	<SFML/Window.hpp>
+	"../Behaviour.hpp"
+
+1359893973 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Behaviour.cpp
+	<cassert>
+	<iostream>
+	"Behaviour.hpp"
+
+1359820895 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Behaviour.hpp
+
+1359966605 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Behaviours/KeysBehaviour.cpp
+	"KeysBehaviour.hpp"
+	<SFML/Window.hpp>
+	"../GameObject.hpp"
+
+1359823466 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Behaviours/KeysBehaviour.hpp
+	"../Behaviour.hpp"
+
+1359901763 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/GameObject.hpp
+	<vector>
+	<string>
+	"glm.hpp"
+
+1359966957 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/glm.hpp
+	<iostream>
+	<iomanip>
+	<glm/glm.hpp>
+	<glm/ext.hpp>
+
+1359823488 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Behaviours/RotatingBehaviour.cpp
+	"RotatingBehaviour.hpp"
+	<iostream>
+	"../glm.hpp"
+	"../GameObject.hpp"
+
+1359823480 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Behaviours/RotatingBehaviour.hpp
+	"../Behaviour.hpp"
+
+1359968814 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Behaviours/WASDBehaviour.cpp
+	<iostream>
+	<cmath>
+	<SFML/Window.hpp>
+	"WASDBehaviour.hpp"
+	"../glm.hpp"
+	"../GameObject.hpp"
+
+1359908478 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Behaviours/WASDBehaviour.hpp
+	<SFML/Window.hpp>
+	"../Behaviour.hpp"
+
+1359909952 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Camera.cpp
+	"glm.hpp"
+	"Camera.hpp"
+	"Renderer.hpp"
+
+1359907314 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Camera.hpp
+	<string>
+	"GameObject.hpp"
+
+1359895596 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Renderer.hpp
+	<GL/glew.h>
+	<SFML/Window.hpp>
+	"glm.hpp"
+
+1359902009 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Collider.cpp
+	<iostream>
+	"Collider.hpp"
+	"GameObject.hpp"
+
+1359901910 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Collider.hpp
+
+1358430878 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/FPS.cpp
+	<iostream>
+	"FPS.hpp"
+	"Time.hpp"
+
+1358430510 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/FPS.hpp
+
+1358431643 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Time.hpp
+	<SFML/System.hpp>
+
+1359968930 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Game.cpp
+	<cassert>
+	"Time.hpp"
+	"FPS.hpp"
+	"Renderer.hpp"
+	"ShaderProgram.hpp"
+	"Game.hpp"
+	"World.hpp"
+	"Camera.hpp"
+	"Light.hpp"
+	"Mesh.hpp"
+	"Texture.hpp"
+	"Behaviours/KeysBehaviour.hpp"
+	"Behaviours/WASDBehaviour.hpp"
+	"Behaviours/RotatingBehaviour.hpp"
+	"Collider.hpp"
+
+1359815027 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/ShaderProgram.hpp
+	<string>
+	<vector>
+	<GL/glew.h>
+	"glm.hpp"
+
+1359584133 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Game.hpp
+	<SFML/Window.hpp>
+
+1359913838 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/World.hpp
+	"GameObject.hpp"
+
+1359907327 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Light.hpp
+	<string>
+	"GameObject.hpp"
+
+1359671404 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Mesh.hpp
+	<vector>
+	<GL/glew.h>
+	"glm.hpp"
+
+1359061002 /home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Texture.hpp
+	<iostream>
+	<map>
+	<GL/glew.h>
+
+1359901762 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/GameObject.cpp
+	<cassert>
+	<iostream>
+	"Renderer.hpp"
+	"GameObject.hpp"
+	"Collider.hpp"
+	"Behaviour.hpp"
+	"Mesh.hpp"
+	"Texture.hpp"
+
+1359907291 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Light.cpp
+	"Light.hpp"
+	"Renderer.hpp"
+
+1359814668 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Mesh.cpp
+	"Mesh.hpp"
+	<map>
+	<cstring>
+	<fstream>
+	"Renderer.hpp"
+
+1359968381 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Renderer.cpp
+	"Renderer.hpp"
+	<cassert>
+	<GL/glew.h>
+	"ShaderProgram.hpp"
+	"Texture.hpp"
+
+1359060929 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/ShaderProgram.cpp
+	"ShaderProgram.hpp"
+	<iostream>
+	<fstream>
+	"Texture.hpp"
+
+1359892486 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Texture.cpp
+	<SFML/Graphics.hpp>
+	"ShaderProgram.hpp"
+	"Texture.hpp"
+
+1359818749 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/Time.cpp
+	"Time.hpp"
+	<iostream>
+
+1359913837 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/World.cpp
+	<cassert>
+	"World.hpp"
+	"Camera.hpp"
+	"Light.hpp"
+
+1359895363 source:/home/jan/Documents/INF 3.3 Game Programming/Micro Game Engine/main.cpp
+	<iostream>
+	"Game.hpp"
+
+1360319499 source:h:\data\documents\school\micro game engine\behaviour.cpp
+	<cassert>
+	<iostream>
+	"Behaviour.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\behaviour.hpp
+
+1360319499 source:h:\data\documents\school\micro game engine\behaviours\keysbehaviour.cpp
+	"KeysBehaviour.hpp"
+	<SFML/Window.hpp>
+	"../GameObject.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\behaviours\keysbehaviour.hpp
+	"../Behaviour.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\gameobject.hpp
+	<vector>
+	<string>
+	"glm.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\glm.hpp
+	<iostream>
+	<iomanip>
+	<glm/glm.hpp>
+	<glm/ext.hpp>
+
+1360319499 source:h:\data\documents\school\micro game engine\behaviours\rotatingbehaviour.cpp
+	"RotatingBehaviour.hpp"
+	<iostream>
+	"../glm.hpp"
+	"../GameObject.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\behaviours\rotatingbehaviour.hpp
+	"../Behaviour.hpp"
+
+1360319499 source:h:\data\documents\school\micro game engine\behaviours\wasdbehaviour.cpp
+	<iostream>
+	<cmath>
+	<SFML/Window.hpp>
+	"WASDBehaviour.hpp"
+	"../glm.hpp"
+	"../GameObject.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\behaviours\wasdbehaviour.hpp
+	<SFML/Window.hpp>
+	"../Behaviour.hpp"
+
+1360319499 source:h:\data\documents\school\micro game engine\camera.cpp
+	"glm.hpp"
+	"Camera.hpp"
+	"Renderer.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\camera.hpp
+	<string>
+	"GameObject.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\renderer.hpp
+	<GL/glew.h>
+	<SFML/Window.hpp>
+	"glm.hpp"
+
+1360319499 source:h:\data\documents\school\micro game engine\collider.cpp
+	<iostream>
+	"Collider.hpp"
+	"GameObject.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\collider.hpp
+
+1360319499 source:h:\data\documents\school\micro game engine\fps.cpp
+	<iostream>
+	"FPS.hpp"
+	"Time.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\fps.hpp
+
+1360319499 h:\data\documents\school\micro game engine\time.hpp
+	<SFML/System.hpp>
+
+1360319499 source:h:\data\documents\school\micro game engine\game.cpp
+	<cassert>
+	"Time.hpp"
+	"FPS.hpp"
+	"Renderer.hpp"
+	"ShaderProgram.hpp"
+	"Game.hpp"
+	"World.hpp"
+	"Camera.hpp"
+	"Light.hpp"
+	"Mesh.hpp"
+	"Texture.hpp"
+	"Behaviours/KeysBehaviour.hpp"
+	"Behaviours/WASDBehaviour.hpp"
+	"Behaviours/RotatingBehaviour.hpp"
+	"Collider.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\shaderprogram.hpp
+	<string>
+	<vector>
+	<GL/glew.h>
+	"glm.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\game.hpp
+	<SFML/Window.hpp>
+
+1360319499 h:\data\documents\school\micro game engine\world.hpp
+	"GameObject.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\light.hpp
+	<string>
+	"GameObject.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\mesh.hpp
+	<vector>
+	<GL/glew.h>
+	"glm.hpp"
+
+1360319499 h:\data\documents\school\micro game engine\texture.hpp
+	<iostream>
+	<map>
+	<GL/glew.h>
+
+1360319499 source:h:\data\documents\school\micro game engine\gameobject.cpp
+	<cassert>
+	<iostream>
+	"Renderer.hpp"
+	"GameObject.hpp"
+	"Collider.hpp"
+	"Behaviour.hpp"
+	"Mesh.hpp"
+	"Texture.hpp"
+
+1360319499 source:h:\data\documents\school\micro game engine\light.cpp
+	"Light.hpp"
+	"Renderer.hpp"
+
+1360319499 source:h:\data\documents\school\micro game engine\main.cpp
+	<iostream>
+	"Game.hpp"
+
+1360319499 source:h:\data\documents\school\micro game engine\mesh.cpp
+	"Mesh.hpp"
+	<map>
+	<cstring>
+	<fstream>
+	"Renderer.hpp"
+
+1360319499 source:h:\data\documents\school\micro game engine\renderer.cpp
+	"Renderer.hpp"
+	<cassert>
+	<GL/glew.h>
+	"ShaderProgram.hpp"
+	"Texture.hpp"
+
+1360319499 source:h:\data\documents\school\micro game engine\shaderprogram.cpp
+	"ShaderProgram.hpp"
+	<iostream>
+	<fstream>
+	"Texture.hpp"
+
+1360319499 source:h:\data\documents\school\micro game engine\texture.cpp
+	<SFML/Graphics.hpp>
+	"ShaderProgram.hpp"
+	"Texture.hpp"
+
+1360319499 source:h:\data\documents\school\micro game engine\time.cpp
+	"Time.hpp"
+	<iostream>
+
+1360319499 source:h:\data\documents\school\micro game engine\world.cpp
+	<cassert>
+	"World.hpp"
+	"Camera.hpp"
+	"Light.hpp"
+
