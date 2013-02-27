@@ -13,7 +13,7 @@ void FPS::update()
 	FPS::count++;
 	if ( time - startTime >= 1.0f ) {
 		fps = count;
-		std::cout << "FPS " << fps << std::endl;
+		//std::cout << "FPS " << fps << std::endl;
 		count = 0;
 		startTime = time;
 	}

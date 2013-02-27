@@ -3,8 +3,8 @@
 
 #include "../GameObject.hpp"
 
-KeysBehaviour::KeysBehaviour( GameObject * aParent )
-:	Behaviour( aParent )
+KeysBehaviour::KeysBehaviour( GameObject * aParent, Game * aGame )
+:	Behaviour( aParent ), game( aGame )
 {
 }
 
@@ -31,6 +31,10 @@ void KeysBehaviour::update( float step )
 	if ( sf::Keyboard::isKeyPressed( sf::Keyboard::Left )) {
 		rotationSpeed = +135.0f;
 		//transformation = glm::rotate( transformation, 135*step, glm::vec3(0.0f, 1.0f, 0.0f ) );
+	}
+	if ( sf::Keyboard::isKeyPressed( sf::Keyboard::Escape )){
+        //close window
+        game->stop();
 	}
 	parent->translate( glm::vec3(0.0f, 0.0f, speed*step ) );
 	parent->rotate( rotationSpeed*step, glm::vec3(0.0f, 1.0f, 0.0f ) );

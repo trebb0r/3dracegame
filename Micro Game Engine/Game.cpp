@@ -36,24 +36,25 @@ void Game::build()
 {
 	renderer->use(  new ShaderProgram( "shaders/default.vs", "shaders/default.fs" ) );
 	camera = new Camera( "Camera", glm::vec3( 0, 1, 10 ) );
-		camera->setBehaviour( new WASDBehaviour( camera, window ) );
+		//camera->setBehaviour( new WASDBehaviour( camera, window ) );
 	light = new Light( "Light", glm::vec3( 2.0f, 10.0f, 15.0f ) );
 	Mesh * suzanna = Mesh::load( "models/suzanna.obj");
 	world = new World( "World" );
 		world->add( camera );
 		world->add( light );
 		GameObject * player = new GameObject("Player", glm::vec3( 0.0, 0.0, 0.0 ));
-			player->setBehaviour( new RotatingBehaviour( player ) );
+			//player->setBehaviour( new RotatingBehaviour( player ) );
+			player->setBehaviour(new KeysBehaviour( player , this ));
 			player->setMesh( suzanna );
 			player->setColorMap( Texture::load("models/bricks.jpg") );
 			player->setCollider( new Collider( player ) );
 			world->add( player  );
-		GameObject * enemy = new GameObject("Enemy", glm::vec3( 2,0,-5 ) );
-			enemy->setBehaviour( new KeysBehaviour( enemy ) );
-			enemy->setMesh( suzanna );
-			enemy->setColorMap( Texture::load("models/monkey.jpg") );
-			enemy->setCollider( new Collider( enemy ) );
-			world->add( enemy );
+		//GameObject * enemy = new GameObject("Enemy", glm::vec3( 2,0,-5 ) );
+			//enemy->setBehaviour( new KeysBehaviour( enemy ) );
+			//enemy->setMesh( suzanna );
+			//enemy->setColorMap( Texture::load("models/monkey.jpg") );
+			//enemy->setCollider( new Collider( enemy ) );
+			//world->add( enemy );
 		GameObject * floor = new GameObject("Floor", glm::vec3( 0,0,0 ) );
 			floor->setMesh( Mesh::load( "models/floor.obj" ) );
 			floor->setColorMap( Texture::load( "models/land.jpg" ) );
@@ -76,6 +77,8 @@ void Game::run()
 
 void Game::stop()
 {
+    window->close();
+    running = false;
 }
 
 // private functions
