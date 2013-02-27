@@ -7,6 +7,7 @@
 
 class ShaderProgram;
 class Texture;
+class GameObject;
 
 class Renderer
 {
@@ -32,8 +33,6 @@ class Renderer
 
 		void use( ShaderProgram * program );
 
-		void clear( glm::vec4 backgroundColor );
-
 			void setProjection( glm::mat4 aProjection );
 			void setView( glm::mat4 aView );
 			void setModel( glm::mat4 aModel );
@@ -41,11 +40,8 @@ class Renderer
 			void setTime( float aTime );
 			void setLight( glm::vec3 aLight );
 			void setColorMap ( Texture * aColorMap );
-
-			// attributes for drawElements so indexed drawing
-			void draw( unsigned int size, GLuint indicesId, GLuint verticesId, GLuint normalsId, GLuint uvsId );
-
-		void display();
+			void draw( GameObject * aWorld ); // starting point for drawing
+			void draw( unsigned int size, GLuint indicesId, GLuint verticesId, GLuint normalsId, GLuint uvsId ); // drawing mesh, all other uniforms etc should be allready available
 
 	private:
 		void findLocations();

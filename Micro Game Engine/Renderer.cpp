@@ -2,16 +2,14 @@
 #include <cassert>
 #include <GL/glew.h>
 
-
+#include "Time.hpp"
 #include "ShaderProgram.hpp"
 #include "Texture.hpp"
+#include "GameObject.hpp"
 
 Renderer::Renderer( sf::Window * aWindow )
 :	window( aWindow ), program( NULL )
 {
-	glEnable( GL_DEPTH_TEST );
-	//glEnable( GL_CULL_FACE );
-	//glEnable( GL_TEXTURE_2D );
 }
 
 Renderer::~Renderer()
@@ -22,34 +20,28 @@ Renderer::~Renderer()
 void Renderer::use( ShaderProgram * aProgram )
 {
 	program = aProgram;
-	program->use();
-	findLocations();
-}
-
-void Renderer::clear( glm::vec4 backgroundColor )
-{
-	glClearColor( backgroundColor.x, backgroundColor.y, backgroundColor.z, backgroundColor.w );
-	glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT ); // clear screen 0
+	program->use(); // this is the default program
+	findLocations(); // find where to put the uniforms to
 }
 
 void Renderer::setProjection( glm::mat4 aProjection )
 {
-	projection = aProjection;
+	projection = aProjection; // cache P matrix
 }
 
 void Renderer::setView( glm::mat4 aView )
 {
-	view = aView;
+	view = aView; // cache V matrix
 }
 
 void Renderer::setModel( glm::mat4 aModel )
 {
-	model = aModel;
+	model = aModel; // cache M matrix
 }
 
 void Renderer::setLight( glm::vec3 aLight )
 {
-	light = aLight;
+	light = aLight; // cache light prosition for positional light
 }
 
 void Renderer::setColorMap( Texture * aColorMap ) // for single texture at a time, otherwise use activeTexture
@@ -59,7 +51,18 @@ void Renderer::setColorMap( Texture * aColorMap ) // for single texture at a tim
 
 void Renderer::setTime( float aTime )
 {
-	time = aTime;
+	time = aTime; // set time for use in vs and fs
+}
+
+void Renderer::draw( GameObject * aWorld )
+{
+	program->use(); // make sure default shader program is used
+	glEnable( GL_DEPTH_TEST );
+	glEnable( GL_CULL_FACE ); // defaul GL_BACK
+	glClearColor( 0.1f, 0.1f, 0.1f, 1.0f );
+	glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT ); // clear screen 0
+	time = Time::now(); // provide the shader with time float in seconds, for later use !
+	aWorld->draw( this );
 }
 
 void Renderer::draw( unsigned int size, GLuint indicesBuffer, GLuint verticesBuffer, GLuint normalsBuffer, GLuint uvsBuffer ) // size is count of indices
@@ -92,13 +95,14 @@ void Renderer::draw( unsigned int size, GLuint indicesBuffer, GLuint verticesBuf
 	glDrawElements( GL_TRIANGLES, size, GL_UNSIGNED_INT, (GLvoid*)0 );
 	// no current buffer, to avoid mishaps
 	glBindBuffer( GL_ARRAY_BUFFER, 0 );
+	glDisableVertexAttribArray( uvsLoc );
+	glDisableVertexAttribArray( normalsLoc );
+	glDisableVertexAttribArray( verticesLoc );
+	glBindTexture( GL_TEXTURE_2D, 0 );
 }
 
-void Renderer::display()
-{
-	window->display(); // swap screenbuffer
-}
 
+/*********************************************************************************/
 
 // private members
 void Renderer::findLocations()

@@ -1,4 +1,4 @@
-#version 130 // for glsl version (12 is for older versions , say opengl 2.1
+#version 150 // for glsl version (12 is for older versions , say opengl 2.1
 
 uniform sampler2D colorMap;
 uniform float time;

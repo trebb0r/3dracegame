@@ -29,6 +29,7 @@ Texture * Texture::load( const char * aName )
 	} else { // load from file and store in cache
 		sf::Image image;
 		if ( image.loadFromFile( aName ) ) {
+			image.flipVertically();
 			Texture * texture = new Texture( aName );
 				glGenTextures( 1, &texture->id );
 				glBindTexture( GL_TEXTURE_2D, texture->id );
@@ -39,6 +40,7 @@ Texture * Texture::load( const char * aName )
 				//glGenerateMipmap( GL_TEXTURE_2D ); 							// for mipmapping
 				//glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_BASE_LEVEL, 0 ); 	// for mipmapping
 				//glTexParameteri( GL_TEXTURE_2D, GL_TEXTURE_MAX_LEVEL, 4 ); 	// for mipmapping
+
 				std::cout << "Done loading texture " << aName << " with id " << texture->id << std::endl;
 			textures[aName] = texture; // stores mesh in cache for reuse
 			return texture;

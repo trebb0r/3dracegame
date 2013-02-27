@@ -30,6 +30,8 @@
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
+					<Add library="GLEW" />
+					<Add library="GL" />
 				</Linker>
 			</Target>
 		</Build>

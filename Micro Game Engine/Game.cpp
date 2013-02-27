@@ -1,7 +1,9 @@
 #include <cassert>
+
 #include "Time.hpp"
 #include "FPS.hpp"
 
+#include "Hud.hpp"
 #include "Renderer.hpp"
 #include "ShaderProgram.hpp"
 #include "Game.hpp"
@@ -16,11 +18,12 @@
 #include "Collider.hpp"
 
 Game::Game()
-:	window(NULL), renderer(NULL), world(NULL), camera(NULL), light(NULL)
+:	window(NULL), hud(NULL), renderer(NULL), world(NULL), camera(NULL), light(NULL)
 {
-	window = new sf::Window( sf::VideoMode( 800, 600 ), "Saxion Game" ); // get a window
-	//window->setVerticalSyncEnabled( true ); // sync with monitor ->60 hz approx
+	window = new sf::RenderWindow( sf::VideoMode( 800, 600 ), "Saxion Game" ); // get a window
 	std::cout << "Init Glew" << glewInit() << std::endl;
+	hud = new Hud( window );
+	//window->setVerticalSyncEnabled( true ); // sync with monitor ->60 hz approx
 	renderer = new Renderer( window );
 }
 
@@ -32,28 +35,29 @@ Game::~Game()
 void Game::build()
 {
 	renderer->use(  new ShaderProgram( "shaders/default.vs", "shaders/default.fs" ) );
-	camera = new Camera( "Camera", glm::vec3( 0, 0, 10 ) );
+	camera = new Camera( "Camera", glm::vec3( 0, 1, 10 ) );
 		camera->setBehaviour( new WASDBehaviour( camera, window ) );
 	light = new Light( "Light", glm::vec3( 2.0f, 10.0f, 15.0f ) );
 	Mesh * suzanna = Mesh::load( "models/suzanna.obj");
 	world = new World( "World" );
-		//world->setCamera( camera );
-		//world->setLight( light );
 		world->add( camera );
 		world->add( light );
-		GameObject * player = new GameObject("Player", glm::vec3( 0.0, -1.0, 0.0 ));
+		GameObject * player = new GameObject("Player", glm::vec3( 0.0, 0.0, 0.0 ));
 			player->setBehaviour( new RotatingBehaviour( player ) );
 			player->setMesh( suzanna );
 			player->setColorMap( Texture::load("models/bricks.jpg") );
 			player->setCollider( new Collider( player ) );
-
 			world->add( player  );
-		GameObject * enemy = new GameObject("Enemy", glm::vec3( 2,-1,-5 ) );
+		GameObject * enemy = new GameObject("Enemy", glm::vec3( 2,0,-5 ) );
 			enemy->setBehaviour( new KeysBehaviour( enemy ) );
 			enemy->setMesh( suzanna );
 			enemy->setColorMap( Texture::load("models/monkey.jpg") );
 			enemy->setCollider( new Collider( enemy ) );
 			world->add( enemy );
+		GameObject * floor = new GameObject("Floor", glm::vec3( 0,0,0 ) );
+			floor->setMesh( Mesh::load( "models/floor.obj" ) );
+			floor->setColorMap( Texture::load( "models/land.jpg" ) );
+			world->add( floor );
 }
 
 void Game::run()
@@ -61,11 +65,11 @@ void Game::run()
 	running = true;
 	while ( running ) {
 		Time::update();
+		FPS::update();
 		control();
 		if ( running ) { // control may have changed running;
 			update( Time::step() );
 			draw();
-			FPS::update();
 		}
 	}
 }
@@ -96,13 +100,15 @@ void Game::update( float step )
 
 void Game::draw()
 {
+	assert( window != NULL );
 	assert( renderer != NULL );
 	assert( world != NULL );
 
-	renderer->setTime( Time::now() );
-	//std::cout << "Time " << Time::now() << std::endl;
-	world->draw( renderer );
-	renderer->display();
+	renderer->draw( world );
+	window->pushGLStates();
+	hud->draw();
+	window->popGLStates();
+	window->display();
 }
 
 

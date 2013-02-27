@@ -97,6 +97,8 @@ void GameObject::onCollision(  GameObject * otherGameObject )
 
 void GameObject::draw( Renderer * aRenderer, glm::mat4 parentTransform )
 {
+	assert( aRenderer != NULL );
+
 	//std::cout << name << "  ";
 	if ( mesh ) { // if there is something to draw
 		aRenderer->setModel( parentTransform * transform ); // combine parents transfor with own

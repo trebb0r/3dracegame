@@ -1,8 +1,10 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include <SFML/Graphics.hpp>
 #include <SFML/Window.hpp>
 
+class Hud;
 class Renderer;
 class World;
 class Camera;
@@ -10,7 +12,8 @@ class Light;
 class Game
 {
 	private: // data members
-		sf::Window * window;
+		sf::RenderWindow * window;
+		Hud * hud;
 		Renderer * renderer;
 		World * world;
 		Camera * camera;

@@ -124,6 +124,7 @@ void Mesh::buffer()
 		glGenBuffers(1, &uvsBuffer );
 			glBindBuffer( GL_ARRAY_BUFFER, uvsBuffer ); // working on uvs buffer
 			glBufferData( GL_ARRAY_BUFFER, uvs.size()*sizeof(glm::vec2), &uvs[0][0], GL_STATIC_DRAW );
+		glBindBuffer( GL_ARRAY_BUFFER, 0 ); // important for 2d sfml
 	}
 }
 

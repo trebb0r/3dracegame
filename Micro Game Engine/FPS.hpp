@@ -9,10 +9,12 @@ class FPS
 
 	public:
 		static void update();
+		static unsigned int getFPS();
 
 	private:
 		static float startTime;
-		static int count;
+		static unsigned int count;
+		static unsigned int fps;
 };
 
 #endif // FPS_H
